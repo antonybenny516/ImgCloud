@@ -10,4 +10,4 @@ def home(request):
             form.save()
     form = ImageForm()
     img = Image.objects.all()
-    return render(request, 'imgcloud/home.html', {'img':img,'form':form})
+    return render(request, 'imgcloud/index.html', {'img':img,'form':form})
